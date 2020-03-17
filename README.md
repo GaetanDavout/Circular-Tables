@@ -12,7 +12,7 @@ Another way to see multiplication tables with a defined amount of multiplicator 
 ## Install
 * Clone this repository:
 ```
-git clone https://github.com/italogfernandes/xablaus.git
+git clone https://github.com/GaetanDavout/Circular-Tables.git
 ```
 
 
