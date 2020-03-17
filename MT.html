@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link href="style.css" rel="stylesheet" />
+		<title>Times tables</title>
+	</head>
+	<body>
+	    <h1>Times tables</h1>
+		<p><em>Inspired by Mickaël Launay (<a href="http://www.micmaths.com/" target="_blank">Micmaths</a>)</em></p>
+		<svg id="circularTable">
+		</svg>
+		<form>
+		    <fieldset>
+				<legend>Parameters</legend>
+				<div class="parameterLine">
+					<label for="table">Table of :</label>
+					<input type="number" name="table" id="table" onchange="changeTable()" value="2" step="1"/>
+					<label for="step_table">Step :</label>
+					<select name="step_table" id="step_table" onchange="setStepTable()">
+						<option value="1.0">1</option>
+						<option value="0.1">0.1</option>
+						<option value="0.01">0.01</option>
+					</select>
+					<input type="button" name="playTable" id="playTable" value="play" title="play" onclick="callAutoplayTable()"/>
+					<input type="button" name="pauseTable" id="pauseTable" value="pause" title="pause"/>
+				</div>
+				<div class="parameterLine">
+					<label for="modulo">Modulo :&#8239;</label>
+					<input type="number" name="modulo" id="modulo" onchange="changeModulo()" min="1" value="10" step="1"/>
+					<label for="step_table">Step :</label>
+					<select name="step_modulo" id="step_modulo" onchange="setStepModulo()">
+						<option value="1.0">1</option>
+						<option value="0.1">0.1</option>
+						<option value="0.01">0.01</option>
+					</select>
+					<input type="button" name="playModulo" id="playModulo" value="play" title="play" onclick="callAutoplayModulo()"/>
+					<input type="button" name="pauseModulo" id="pauseModulo" value="pause" title="pause"/>
+				</div>
+				<div class="OtherParameter">
+					<label for="coloration">Automatic coloration : </label>
+					<input type="checkbox" id="coloration" name="coloration" onchange="setColor()"/>
+				</div>
+				<div>
+					<label for="lineColor">Line coloration : &#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;</label>
+					<input type="color" id="lineColor" name="lineColor" onchange="changeColor()"/>
+				</div>
+				<div>
+					<label for="specificBackgroundColor">Background color :&#8239;&#8239;&#8239;&#8239;&#8239;</label>
+					<input type="color" id="specificBackgroundColor" name="specificBackgroundColor" onchange="changeBackgroundColor()"/>
+				</div>
+				<div class="OtherParameter">
+					<label for="backgroundColor">style :&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;</label>
+					<select name="backgroundColor" id="backgroundColor" onchange="setColor()">
+						<option value="1">White</option>
+						<option value="0">Black</option>
+					</select>
+				</div>
+				<div class="OtherParameter">
+					<label for="largeur">Lines weight :&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;&#8239; &#8239;</label>
+					<input type="number" name="largeur" id="largeur" onchange="changeWeight()" max="10" min="1" value="2" step="1"/>
+				</div>
+				<div class="OtherParameter">
+					<label for="width">Horizontal diameter : </label>
+					<input type="number" name="width" id="width" onchange="changeWidth()" max="10000" min="100" value="500" step="2"/>
+				</div>
+				<div class="OtherParameter">
+					<label for="height">Vertical diameter&#8239;:&#8239;&#8239;&#8239;&#8239;&#8239;&#8239;</label>
+					<input type="number" name="height" id="height" onchange="changeHeight()" max="10000" min="100" value="500" step="2"/>
+				</div>
+		  </fieldset>
+		</form>
+		<p><a href="http://xn--tests-de-personnalit-u2b.net/multiplications/circularTable.html" target="_blank">Check it on the real page !</a></p>
+		<p>To obtain a SVG print and send to pdf. There the image will be vectorial.</p>
+		<p><em>Proudly presented By Gaetan Davout</em></p>
+		<script type="text/javascript" src="circularTable.js"></script>
+	</body>
+</html>
