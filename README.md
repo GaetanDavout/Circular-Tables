@@ -6,7 +6,7 @@ Another way to see multiplication tables with a defined amount of multiplicator 
 
 
 
-![](brain_sim.jpg)
+![](ex.png)
 
 
 ## Install
