@@ -18,7 +18,7 @@ git clone https://github.com/GaetanDavout/Circular-Tables.git
 
 ## Running:
 
-* Just launch MT.html with your browser
+* Just launch MT.html with your browser (tested on Google Chrome)
 
 
 ## License
