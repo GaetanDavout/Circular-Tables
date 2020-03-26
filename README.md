@@ -1,13 +1,7 @@
 # Circular-Tables
 Another way to see multiplication tables with a defined amount of multiplicator but with infinite possibilities...
 
-
-
-
-
-
 ![](ex.png)
-
 
 ## Install
 * Clone this repository:
